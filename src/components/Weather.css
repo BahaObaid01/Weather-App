@@ -83,3 +83,60 @@
     height: 40px;
     margin-top: 7px;
 }
+
+/* --- Responsive tweaks for mobile screens --- */
+@media (max-width: 480px) {
+  .app {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    overflow: hidden; /* Prevents zoom/scroll bounce */
+  }
+
+  .weather {
+    width: 90%;
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+    height: 40px;
+    padding-left: 15px;
+  }
+
+  .search-bar img {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+  .weather-icon {
+    width: 120px;
+  }
+
+  .temperature {
+    font-size: 55px;
+  }
+
+  .location {
+    font-size: 28px;
+  }
+
+  .weather-data {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+  }
+
+  .weather-data .col {
+    font-size: 18px;
+    gap: 8px;
+  }
+
+  .weather-data .col span {
+    font-size: 14px;
+  }
+}
